@@ -26,17 +26,22 @@ export const DATA = {
   // shortcut: localhost is only for preview, set NEXT_PUBLIC_SITE_URL before deployment.
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   description:
-    "Informatics Engineering student exploring Blue Team security, Linux systems, and Python development.",
+    "Informatics Engineering student at UIN Malang focused on cybersecurity, Python development, and data science.",
   summary:
-    "I study Informatics Engineering at UIN Maulana Malik Ibrahim Malang. My main interests are defensive security, log analysis, network security, and Linux. I also use Python to build practical tools and continue learning through hands-on projects and labs.",
+    "I study Informatics Engineering at UIN Maulana Malik Ibrahim Malang, with interests in defensive security, Python development, and data science. I practice Linux and MikroTik networking, build projects with Flask and Scikit-learn, and contribute to campus technology communities.",
   avatarUrl: "/arya-cutout.png",
-  skills: ["Blue Team", "Cybersecurity", "Linux", "Python", "Networking", "Log Analysis", "Flask", "SQL"],
+  skills: ["Blue Team", "Cybersecurity", "Linux", "Python", "Data Science", "MikroTik", "Networking", "Log Analysis", "Flask", "SQL", "PHP"],
   certificates: [
-    { title: "Introduction to Cybersecurity", issuer: "Cisco", issued: "Mar 2026" },
-    { title: "Pre Security Certificate", issuer: "TryHackMe", issued: "Jul 2025" },
-    { title: "Cyber Security 101 Certificate", issuer: "TryHackMe", issued: "Jul 2025" },
+    { title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", issued: "Mar 2026", href: "/certificates/cisco-introduction-to-cybersecurity.png" },
+    { title: "Cyber Security 101", issuer: "TryHackMe", issued: "Jul 2025", href: "/certificates/tryhackme-cyber-security-101.pdf" },
+    { title: "Pre Security", issuer: "TryHackMe", issued: "Jul 2025", href: "/certificates/tryhackme-pre-security.pdf" },
+    { title: "Introduction to Information Security", issuer: "Cyber Academy", issued: "Jun 2025", href: "/certificates/cyber-academy-information-security.pdf" },
+    { title: "Python Fundamental", issuer: "Aguna Course", issued: "Apr 2025", href: "/certificates/aguna-python-fundamental.pdf" },
+    { title: "Memulai Pemrograman dengan Java", issuer: "Dicoding", issued: "Jan 2025", href: "/certificates/dicoding-java.pdf" },
+    { title: "Ketua OSIS", issuer: "MA Hasanuddin Pare", issued: "Aug 2022", href: "/certificates/osis-chairperson.jpg" },
   ],
   contact: {
+    email: "aryapulosari@gmail.com",
     social: {
       LinkedIn: {
         url: "https://id.linkedin.com/in/arya-kharisudin-irfani-055311328",
@@ -48,13 +53,31 @@ export const DATA = {
   },
   work: [
     {
+      company: "Felkira",
+      title: "Founder",
+      monogram: "FLK",
+      logoUrl: "",
+      start: "2026",
+      end: "Present",
+      description: "Agency focused on building web and mobile applications with AI integration.",
+    },
+    {
       company: "Ethernet-0 Community",
       title: "Lead",
       monogram: "ETH",
       logoUrl: "",
       start: "Oct 2026",
       end: "Present",
-      description: "A cybersecurity community at UIN Maulana Malik Ibrahim Malang, where I serve as Lead.",
+      description: "Lead a cybersecurity community at UIN Malang. Presented an IT incubation introduction and helped create CTF learning materials.",
+    },
+    {
+      company: "PTIPD UIN Maulana Malik Ibrahim Malang",
+      title: "Blue Team Cybersecurity Intern",
+      monogram: "PTI",
+      logoUrl: "",
+      start: "Aug 2026",
+      end: "Sep 2026",
+      description: "Completed a two-month cybersecurity internship with the Blue Team at PTIPD UIN Malang.",
     },
     {
       company: 'HMPS Teknik Informatika "Encoder" UIN Malang',
@@ -64,37 +87,56 @@ export const DATA = {
       start: "Jun 2025",
       end: "Present",
       description:
-        "Participate in student activities and team-based programs that support learning and collaboration in information technology.",
+        "Help plan and run student association programs, including leading a charity event committee.",
+    },
+    {
+      company: "OSIS, MA Hasanuddin Pare",
+      title: "Chair",
+      monogram: "OSIS",
+      logoUrl: "",
+      start: "2022",
+      end: "2023",
+      description: "Led the student council, coordinated its programs, and worked with teachers and student representatives.",
     },
   ],
   education: [
     {
       school: "UIN Maulana Malik Ibrahim Malang",
       href: "https://uin-malang.ac.id/",
+      monogram: "UIN",
       degree: "Informatics Engineering",
       logoUrl: "",
       start: "2024",
       end: "Present",
+    },
+    {
+      school: "MA Hasanuddin Pare",
+      href: undefined,
+      monogram: "MA",
+      degree: "High school",
+      logoUrl: "",
+      start: "2021",
+      end: "2024",
     },
   ],
   projects: [
     {
       title: "Geographic Route Finder",
       description:
-        "A route-finding application using Python, Flask, Dijkstra's algorithm, and SQL-backed data.",
+        "A Malang Raya route-finding application using Python, Flask, Dijkstra's algorithm, and SQL-backed data.",
       technologies: ["Python", "Flask", "Dijkstra", "SQL"],
     },
     {
       title: "MikroTik Networking Laboratory",
       description:
-        "Hands-on networking practice covering DHCP, NAT, firewall filtering, simple queues, hotspot, and troubleshooting.",
+        "Configured DHCP, NAT, firewall filters, simple queues, and a hotspot, with basic network troubleshooting.",
       technologies: ["MikroTik", "DHCP", "NAT", "Firewall"],
     },
     {
       title: "Superstore Data Science",
       description:
-        "Data analysis comparing Linear Regression, Ridge Regression, and Random Forest Regressor.",
-      technologies: ["Python", "Machine Learning", "Data Analysis"],
+        "Used Scikit-learn to compare Linear Regression, Ridge Regression, and Random Forest on Superstore data.",
+      technologies: ["Python", "Scikit-learn", "Data Analysis"],
     },
     {
       title: "Web CRUD Application",

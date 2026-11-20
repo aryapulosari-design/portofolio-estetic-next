@@ -38,3 +38,14 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .content-collections
+
+# Local source files and design references; public assets live in public/.
+/sertifikat gw/
+/my poto dll/
+/Reference/
+/velkira-10-skills/
+/Reverensi/desktop.ini
+/Young Man in Black Utility Jacket.png
+/image.png
+/nafbar contoh.png
+/pengalaman.png

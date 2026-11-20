@@ -16,23 +16,22 @@ export default function Page() {
       <div className="intro-story">
         <section id="hero" className="intro-hero">
           <div className="intro-hero-title">
-            <p className="intro-eyebrow">Blue Team / Linux / Python</p>
-            <h1><span>Hi, I&apos;m</span>{DATA.name}</h1>
+            <h1>Hi, I&apos;m Arya.</h1>
             <div className="intro-actions">
-              <Link href="/#about" className="intro-action-secondary">About me</Link>
+              <Link href="/#about" className="intro-action-secondary">About</Link>
             </div>
           </div>
           <div className="intro-hero-copy">
             <p className="intro-description">{DATA.description}</p>
             <div className="intro-actions">
-              <Link href="/#projects" className="intro-action-primary">Explore projects</Link>
+              <Link href="/#projects" className="intro-action-primary">Projects</Link>
             </div>
           </div>
         </section>
         <ScrollPortrait src={DATA.avatarUrl} alt="Potret Arya Kharisudin Irfani mengenakan jaket hitam" />
         <section id="about" className="intro-about scroll-reveal">
-          <p className="intro-eyebrow">About Arya</p>
-          <h2>Learning by building and exploring.</h2>
+          <p className="intro-eyebrow">About</p>
+          <h2>Networks, logs, and the code behind them.</h2>
           <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
             <Markdown>{DATA.summary}</Markdown>
           </div>

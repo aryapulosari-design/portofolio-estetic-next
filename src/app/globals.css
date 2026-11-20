@@ -10,7 +10,7 @@ html {
 
 @media (min-width: 768px) {
   html {
-    scroll-padding-top: 8rem;
+    scroll-padding-top: 6rem;
   }
 }
 
@@ -29,17 +29,11 @@ html {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .nav-active-pill { animation: nav-select 180ms ease-out both; }
   .mobile-nav-enter { animation: nav-open 180ms ease-out both; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .nav-shell { transition: none; }
-}
-
-@keyframes nav-select {
-  from { opacity: 0.55; transform: scale(0.92); }
-  to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes nav-open {
@@ -93,11 +87,6 @@ html {
   letter-spacing: -0.045em;
   line-height: 1.04;
   text-wrap: balance;
-}
-
-.intro-hero h1 span {
-  display: block;
-  color: var(--primary);
 }
 
 .intro-description {
@@ -426,6 +415,11 @@ html {
 .certificate-folder:hover {
   transform: translateY(-5px);
   border-color: var(--primary);
+}
+
+.certificate-folder:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
 }
 
 .certificate-folder-top {

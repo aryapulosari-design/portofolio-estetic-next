@@ -5,8 +5,8 @@ export default function JourneySection() {
   return (
     <section id="experience" className="journey-section scroll-reveal" aria-labelledby="journey-heading">
       <div className="journey-intro">
-        <p className="intro-eyebrow">My path</p>
-        <h2 id="journey-heading">Learning through study and community.</h2>
+        <p className="intro-eyebrow">Experience</p>
+        <h2 id="journey-heading">Cybersecurity, product building, and community.</h2>
       </div>
       <div className="journey-columns">
         <div id="education" className="journey-column">
@@ -18,8 +18,8 @@ export default function JourneySection() {
                 <div className="journey-entry">
                   <div className="journey-entry-top">
                     <div className="journey-identity">
-                      <span className="journey-mark" aria-hidden="true">UIN</span>
-                      <Link href={item.href} target="_blank" rel="noopener noreferrer">{item.school}</Link>
+                      <span className="journey-mark" aria-hidden="true">{item.monogram}</span>
+                      {item.href ? <Link href={item.href} target="_blank" rel="noopener noreferrer">{item.school}</Link> : <strong>{item.school}</strong>}
                     </div>
                     <span className="journey-date">{item.start} – {item.end}</span>
                   </div>
@@ -30,7 +30,7 @@ export default function JourneySection() {
           </ol>
         </div>
         <div className="journey-column">
-          <h3>Community experience</h3>
+          <h3>Work &amp; community</h3>
           <ol className="journey-list">
             {DATA.work.map((item, index) => (
               <li className="journey-item" key={item.company}>

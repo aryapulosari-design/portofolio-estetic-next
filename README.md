@@ -1,6 +1,6 @@
 # Portofolio Arya Kharisudin Irfani
 
-Portofolio pribadi berbasis Next.js yang menampilkan profil, pendidikan, pengalaman, proyek, sertifikat, dan kontak Arya. Pengalaman yang ditampilkan mencakup Blue Team di PTIPD UIN Malang dan Felkira, agensi pengembangan web dan aplikasi mobile terintegrasi AI.
+Portofolio pribadi berbasis Next.js yang menampilkan profil, pendidikan, pengalaman, proyek, sertifikat, dan kontak Arya. Pengalaman yang ditampilkan mencakup Blue Team di PTIPD UIN Malang dan Velkira, agensi pengembangan web dan aplikasi mobile terintegrasi AI.
 
 ## Teknologi
 

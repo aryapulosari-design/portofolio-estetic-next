@@ -53,7 +53,7 @@ export const DATA = {
   },
   work: [
     {
-      company: "Felkira",
+      company: "Velkira",
       title: "Founder",
       monogram: "FLK",
       logoUrl: "",

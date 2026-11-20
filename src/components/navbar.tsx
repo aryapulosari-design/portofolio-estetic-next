@@ -71,11 +71,6 @@ export default function Navbar() {
         Skip to content
       </a>
       <div className="flex items-center gap-1">
-        <Link href="/#hero" aria-label="Arya Kharisudin Irfani — Home" className="grid size-11 shrink-0 place-items-center rounded-full border border-primary/30 bg-primary/10 text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
-          <svg viewBox="0 0 32 32" fill="none" className="size-6" aria-hidden="true">
-            <path d="M6 24 16 6l10 18M10 18h12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </Link>
         <nav aria-label="Main navigation" className="hidden items-center gap-0.5 lg:flex">
           {links.map(({ id, href, label }) => (
             <Link key={id} href={href} aria-current={active === id ? "location" : undefined} className={`inline-flex h-11 items-center gap-1 rounded-full px-3.5 text-xs font-medium motion-safe:transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring ${active === id ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-secondary hover:text-foreground"}`}>

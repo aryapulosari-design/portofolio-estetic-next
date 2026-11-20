@@ -121,6 +121,20 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Luma Support",
+      description:
+        "A customer support workspace for online stores by Velkira, with ticket assignment, follow-up history, and an interactive demo.",
+      technologies: ["Next.js", "TypeScript", "Supabase"],
+      href: "https://github.com/aryapulosari-design/Luna_Velkira",
+    },
+    {
+      title: "SunDays Coffee Concept",
+      description:
+        "A responsive café website concept by Velkira with menu filters, brand story, and a video hero.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      href: "https://github.com/aryapulosari-design/SunDays",
+    },
+    {
       title: "Geographic Route Finder",
       description:
         "A Malang Raya route-finding application using Python, Flask, Dijkstra's algorithm, and SQL-backed data.",

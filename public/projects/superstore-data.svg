@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Ilustrasi grafik analisis data">
+  <rect width="800" height="400" fill="#0d1627"/>
+  <rect x="75" y="42" width="650" height="316" rx="20" fill="#18253c" stroke="#355071" stroke-width="2"/>
+  <rect x="103" y="72" width="155" height="13" rx="6" fill="#d6e4f7"/><rect x="103" y="98" width="113" height="7" rx="3" fill="#6d86aa"/>
+  <rect x="103" y="134" width="422" height="194" rx="13" fill="#1f3150"/>
+  <path d="M131 289h365M131 248h365M131 207h365M131 166h365" stroke="#3d5677" stroke-width="2"/>
+  <rect x="153" y="244" width="35" height="45" rx="5" fill="#386bb0"/><rect x="214" y="213" width="35" height="76" rx="5" fill="#386bb0"/><rect x="275" y="230" width="35" height="59" rx="5" fill="#386bb0"/><rect x="336" y="187" width="35" height="102" rx="5" fill="#386bb0"/><rect x="397" y="154" width="35" height="135" rx="5" fill="#386bb0"/>
+  <path d="m169 228 62-35 61 24 61-63 61-24" fill="none" stroke="#8bc2ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="169" cy="228" r="6" fill="#c4e1ff"/><circle cx="231" cy="193" r="6" fill="#c4e1ff"/><circle cx="292" cy="217" r="6" fill="#c4e1ff"/><circle cx="353" cy="154" r="6" fill="#c4e1ff"/><circle cx="414" cy="130" r="6" fill="#c4e1ff"/>
+  <rect x="545" y="134" width="151" height="89" rx="12" fill="#233b5a"/><circle cx="575" cy="164" r="15" fill="#4b86f7"/><rect x="601" y="156" width="71" height="8" rx="4" fill="#b9d3ef"/><rect x="601" y="173" width="50" height="6" rx="3" fill="#7291b5"/>
+  <rect x="545" y="239" width="151" height="89" rx="12" fill="#233b5a"/><circle cx="575" cy="269" r="15" fill="#7ab8ef"/><rect x="601" y="261" width="71" height="8" rx="4" fill="#b9d3ef"/><rect x="601" y="278" width="50" height="6" rx="3" fill="#7291b5"/>
+</svg>

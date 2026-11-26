@@ -15,17 +15,11 @@ export default function Page() {
     <main className="relative flex min-h-dvh flex-col gap-20 sm:gap-28">
       <div className="intro-story">
         <section id="hero" className="intro-hero">
-          <div className="intro-hero-title">
-            <h1>Hi, I&apos;m Arya.</h1>
-            <div className="intro-actions">
-              <Link href="/#about" className="intro-action-secondary">About</Link>
-            </div>
-          </div>
-          <div className="intro-hero-copy">
-            <p className="intro-description">{DATA.description}</p>
-            <div className="intro-actions">
-              <Link href="/#projects" className="intro-action-primary">Projects</Link>
-            </div>
+          <h1>Hi, I&apos;m <span>Arya.</span></h1>
+          <p className="intro-description">{DATA.description}</p>
+          <div className="intro-actions">
+            <Link href="/#projects" className="intro-action-primary">View projects</Link>
+            <Link href="/#about" className="intro-action-secondary">About me</Link>
           </div>
         </section>
         <ScrollPortrait src={DATA.avatarUrl} alt="Potret Arya Kharisudin Irfani mengenakan jaket hitam" />
@@ -54,9 +48,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="scroll-reveal mx-auto w-full max-w-2xl">
-        <ProjectsSection />
-      </section>
+      <ProjectsSection />
       <div className="mx-auto w-full max-w-2xl">
         <CertificatesSection />
       </div>

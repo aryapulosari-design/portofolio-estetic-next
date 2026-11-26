@@ -33,6 +33,9 @@ Untuk melihat build produksi, jalankan `pnpm start`.
 | Komponen tampilan | [`src/components/`](./src/components/) |
 | Warna dan gaya | [`src/app/globals.css`](./src/app/globals.css) |
 | Berkas sertifikat publik | [`public/certificates/`](./public/certificates/) |
+| PRD dan referensi desain | [`docs/`](./docs/) |
+
+Foto sumber, CV, sertifikat asli, dan screenshot referensi disimpan di `local-assets/` pada komputer pemilik. Git mengabaikan folder ini. Lihat [catatan referensi desain](./docs/references.md) untuk daftar sumber.
 
 Untuk menambah sertifikat, simpan berkas di `public/certificates/`, lalu tambahkan judul, penerbit, tanggal, dan tautan di `DATA.certificates`. Semua berkas dalam `public/` bisa diakses pengunjung. Folder sumber CV dan foto pribadi dikecualikan dari Git; foto yang dipakai situs berada di `public/arya-cutout.png`. Alamat email pada bagian Contact juga tampil publik.
 

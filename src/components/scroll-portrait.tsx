@@ -28,7 +28,7 @@ export default function ScrollPortrait({ src, alt }: { src: string; alt: string 
     <figure ref={ref} className="intro-photo-column">
       <motion.div className="intro-photo-sticky" style={reducedMotion ? undefined : { y, rotate }}>
         <motion.div className="intro-photo-frame" style={reducedMotion ? undefined : { rotateX, rotateY }} onPointerMove={move} onPointerLeave={reset}>
-          <Image src={src} alt={alt} fill priority sizes="(max-width: 950px) 320px, 368px" className="intro-photo-image" />
+          <Image src={src} alt={alt} fill priority sizes="(max-width: 767px) 288px, (max-width: 1023px) 38vw, 400px" className="intro-photo-image" />
         </motion.div>
       </motion.div>
     </figure>

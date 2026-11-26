@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Ilustrasi topologi jaringan MikroTik">
+  <rect width="800" height="400" fill="#0c1525"/>
+  <circle cx="400" cy="200" r="165" fill="#17365c" opacity=".45"/>
+  <path d="M248 196 140 108m108 98-112 92m416-102 108-88m-108 98 112 92M400 154V69" stroke="#4a7bb3" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="140" cy="108" r="24" fill="#193455" stroke="#6fa9f5" stroke-width="5"/><circle cx="136" cy="298" r="24" fill="#193455" stroke="#6fa9f5" stroke-width="5"/>
+  <circle cx="660" cy="108" r="24" fill="#193455" stroke="#6fa9f5" stroke-width="5"/><circle cx="664" cy="298" r="24" fill="#193455" stroke="#6fa9f5" stroke-width="5"/>
+  <circle cx="400" cy="68" r="24" fill="#193455" stroke="#6fa9f5" stroke-width="5"/>
+  <rect x="242" y="151" width="316" height="102" rx="20" fill="#1d314d" stroke="#7ab0f5" stroke-width="4"/>
+  <rect x="266" y="175" width="174" height="18" rx="6" fill="#304f73"/>
+  <rect x="266" y="204" width="120" height="9" rx="4" fill="#7899bd"/>
+  <circle cx="487" cy="202" r="9" fill="#72bbff"/><circle cx="516" cy="202" r="9" fill="#72bbff"/>
+  <rect x="287" y="253" width="12" height="15" rx="3" fill="#6fa9f5"/><rect x="334" y="253" width="12" height="15" rx="3" fill="#6fa9f5"/><rect x="381" y="253" width="12" height="15" rx="3" fill="#6fa9f5"/><rect x="428" y="253" width="12" height="15" rx="3" fill="#6fa9f5"/><rect x="475" y="253" width="12" height="15" rx="3" fill="#6fa9f5"/>
+</svg>

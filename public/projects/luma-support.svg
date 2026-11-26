@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Ilustrasi dashboard layanan pelanggan">
+  <rect width="800" height="400" fill="#0b1424"/>
+  <circle cx="697" cy="62" r="174" fill="#244c83" opacity=".22"/>
+  <rect x="70" y="43" width="660" height="314" rx="20" fill="#17243a" stroke="#345174" stroke-width="2"/>
+  <path d="M70 63a20 20 0 0 1 20-20h620a20 20 0 0 1 20 20v27H70Z" fill="#20324f"/>
+  <circle cx="98" cy="66" r="5" fill="#5b81ba"/><circle cx="116" cy="66" r="5" fill="#5b81ba"/><circle cx="134" cy="66" r="5" fill="#5b81ba"/>
+  <rect x="94" y="115" width="128" height="25" rx="8" fill="#4b86f7"/>
+  <rect x="100" y="157" width="95" height="8" rx="4" fill="#557092"/>
+  <rect x="100" y="183" width="77" height="8" rx="4" fill="#557092"/>
+  <rect x="100" y="209" width="108" height="8" rx="4" fill="#557092"/>
+  <path d="M246 91v266" stroke="#345174"/>
+  <rect x="277" y="118" width="168" height="13" rx="6" fill="#dce9ff"/>
+  <rect x="277" y="144" width="116" height="8" rx="4" fill="#7894b7"/>
+  <rect x="277" y="177" width="420" height="47" rx="10" fill="#243a5a"/>
+  <circle cx="301" cy="200" r="10" fill="#4b86f7"/>
+  <rect x="324" y="190" width="158" height="8" rx="4" fill="#c5d8f4"/>
+  <rect x="324" y="205" width="109" height="6" rx="3" fill="#7894b7"/>
+  <rect x="611" y="190" width="62" height="20" rx="10" fill="#315b83"/>
+  <rect x="277" y="236" width="420" height="47" rx="10" fill="#243a5a"/>
+  <circle cx="301" cy="259" r="10" fill="#7cb9f4"/>
+  <rect x="324" y="249" width="183" height="8" rx="4" fill="#c5d8f4"/>
+  <rect x="324" y="264" width="88" height="6" rx="3" fill="#7894b7"/>
+  <rect x="611" y="249" width="62" height="20" rx="10" fill="#375e70"/>
+  <rect x="277" y="295" width="294" height="34" rx="9" fill="#213450"/>
+  <rect x="293" y="308" width="188" height="7" rx="3" fill="#6987ad"/>
+</svg>

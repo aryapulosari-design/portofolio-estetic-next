@@ -7,6 +7,7 @@ type Project = {
   dates?: string;
   href?: string;
   image?: string;
+  imageCaption?: string;
   video?: string;
   links?: { icon: ReactNode; type: string; href: string }[];
 };
@@ -126,6 +127,8 @@ export const DATA = {
         "A customer support workspace for online stores by Velkira, with ticket assignment, follow-up history, and an interactive demo.",
       technologies: ["Next.js", "TypeScript", "Supabase"],
       href: "https://github.com/aryapulosari-design/Luna_Velkira",
+      image: "/projects/luma-support.svg",
+      imageCaption: "Interface illustration",
     },
     {
       title: "SunDays Coffee Concept",
@@ -133,30 +136,35 @@ export const DATA = {
         "A responsive café website concept by Velkira with menu filters, brand story, and a video hero.",
       technologies: ["HTML", "CSS", "JavaScript"],
       href: "https://github.com/aryapulosari-design/SunDays",
+      image: "/projects/sundays.jpg",
     },
     {
       title: "Geographic Route Finder",
       description:
         "A Malang Raya route-finding application using Python, Flask, Dijkstra's algorithm, and SQL-backed data.",
       technologies: ["Python", "Flask", "Dijkstra", "SQL"],
+      image: "/projects/route-finder.svg",
     },
     {
       title: "MikroTik Networking Laboratory",
       description:
         "Configured DHCP, NAT, firewall filters, simple queues, and a hotspot, with basic network troubleshooting.",
       technologies: ["MikroTik", "DHCP", "NAT", "Firewall"],
+      image: "/projects/mikrotik-network.svg",
     },
     {
       title: "Superstore Data Science",
       description:
         "Used Scikit-learn to compare Linear Regression, Ridge Regression, and Random Forest on Superstore data.",
       technologies: ["Python", "Scikit-learn", "Data Analysis"],
+      image: "/projects/superstore-data.svg",
     },
     {
       title: "Web CRUD Application",
       description:
         "A group-built data management application using HTML, CSS, PHP, and MySQL.",
       technologies: ["HTML", "CSS", "PHP", "MySQL"],
+      image: "/projects/web-crud.svg",
     },
   ] as Project[],
   hackathons: [] as Hackathon[],

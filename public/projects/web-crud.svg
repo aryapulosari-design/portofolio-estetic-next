@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Ilustrasi antarmuka tabel data">
+  <rect width="800" height="400" fill="#0d1627"/>
+  <rect x="70" y="42" width="660" height="316" rx="20" fill="#18253b" stroke="#355071" stroke-width="2"/>
+  <path d="M70 63a20 20 0 0 1 20-20h620a20 20 0 0 1 20 20v28H70Z" fill="#233653"/>
+  <circle cx="98" cy="67" r="5" fill="#6485ad"/><circle cx="116" cy="67" r="5" fill="#6485ad"/><circle cx="134" cy="67" r="5" fill="#6485ad"/>
+  <rect x="100" y="120" width="190" height="13" rx="6" fill="#d2e3f7"/><rect x="100" y="147" width="135" height="7" rx="3" fill="#7892b5"/>
+  <rect x="583" y="117" width="115" height="36" rx="10" fill="#4b86f7"/><path d="M606 135h15m-7.5-7.5v15" stroke="#10223b" stroke-width="3" stroke-linecap="round"/>
+  <rect x="100" y="177" width="598" height="150" rx="12" fill="#20324e"/>
+  <path d="M100 212h598M100 251h598M100 289h598M330 177v150M554 177v150" stroke="#3a5474" stroke-width="2"/>
+  <rect x="120" y="191" width="72" height="7" rx="3" fill="#9cbee5"/><rect x="350" y="191" width="65" height="7" rx="3" fill="#9cbee5"/><rect x="574" y="191" width="53" height="7" rx="3" fill="#9cbee5"/>
+  <rect x="120" y="227" width="138" height="8" rx="4" fill="#c4d8f1"/><rect x="350" y="227" width="92" height="8" rx="4" fill="#7899bd"/><rect x="574" y="226" width="55" height="11" rx="5" fill="#365d86"/>
+  <rect x="120" y="265" width="114" height="8" rx="4" fill="#c4d8f1"/><rect x="350" y="265" width="106" height="8" rx="4" fill="#7899bd"/><rect x="574" y="264" width="55" height="11" rx="5" fill="#365d86"/>
+  <rect x="120" y="304" width="151" height="8" rx="4" fill="#c4d8f1"/><rect x="350" y="304" width="83" height="8" rx="4" fill="#7899bd"/><rect x="574" y="303" width="55" height="11" rx="5" fill="#365d86"/>
+</svg>

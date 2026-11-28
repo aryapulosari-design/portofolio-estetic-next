@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function JourneySection() {
   return (
-    <section id="experience" className="journey-section scroll-reveal" aria-labelledby="journey-heading">
+    <section id="experience" tabIndex={-1} className="journey-section scroll-reveal" aria-labelledby="journey-heading">
       <div className="journey-intro">
         <p className="intro-eyebrow">Experience</p>
         <h2 id="journey-heading">Cybersecurity, product building, and community.</h2>

@@ -7,9 +7,9 @@ import { useRef, type PointerEvent } from "react";
 export default function ScrollPortrait({ src, alt }: { src: string; alt: string }) {
   const ref = useRef<HTMLElement>(null);
   const reducedMotion = useReducedMotion();
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], [10, -18]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [1.5, -1]);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const y = useTransform(scrollYProgress, [0, 1], [0, -20]);
+  const opacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 1, 0.5]);
   const pointerX = useMotionValue(0);
   const pointerY = useMotionValue(0);
   const rotateX = useSpring(pointerY, { stiffness: 150, damping: 24 });
@@ -26,7 +26,7 @@ export default function ScrollPortrait({ src, alt }: { src: string; alt: string 
 
   return (
     <figure ref={ref} className="intro-photo-column">
-      <motion.div className="intro-photo-sticky" style={reducedMotion ? undefined : { y, rotate }}>
+      <motion.div className="intro-photo-sticky" style={reducedMotion ? undefined : { y, opacity }}>
         <motion.div className="intro-photo-frame" style={reducedMotion ? undefined : { rotateX, rotateY }} onPointerMove={move} onPointerLeave={reset}>
           <Image src={src} alt={alt} fill priority sizes="(max-width: 767px) 288px, (max-width: 1023px) 38vw, 400px" className="intro-photo-image" />
         </motion.div>

@@ -46,3 +46,5 @@ Isi `NEXT_PUBLIC_SITE_URL` dengan URL situs yang sudah dipublikasikan, misalnya 
 ## Kredit
 
 Fondasi proyek berasal dari [Magic UI Portfolio](https://github.com/magicuidesign/portfolio) dan dikembangkan untuk Arya. Lisensi template tetap tercantum dalam [LICENSE](./LICENSE).
+
+Foto sampul **Security & Networking** oleh [Sergei Starostin di Pexels](https://www.pexels.com/photo/network-servers-on-an-enclosure-6466141/) ([lisensi](https://www.pexels.com/license/)). Foto sampul **Python & Data** oleh [Stephen Dawson di Unsplash](https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs) ([lisensi](https://unsplash.com/license)).

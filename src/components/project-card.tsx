@@ -2,13 +2,12 @@
 
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Markdown from "react-markdown";
 
-function ProjectImage({ src, sizes, animated }: { src: string; sizes: string; animated: boolean }) {
+function ProjectImage({ src, alt, sizes, animated }: { src: string; alt: string; sizes: string; animated: boolean }) {
   const [failedSrc, setFailedSrc] = useState<string>();
 
   if (failedSrc === src) return null;
@@ -16,7 +15,7 @@ function ProjectImage({ src, sizes, animated }: { src: string; sizes: string; an
   return (
     <Image
       src={src}
-      alt=""
+      alt={alt}
       fill
       sizes={sizes}
       onError={() => setFailedSrc(src)}
@@ -35,6 +34,7 @@ interface Props {
   dates?: string;
   tags: readonly string[];
   image?: string;
+  imageAlt?: string;
   imageCaption?: string;
   video?: string;
   links?: readonly {
@@ -43,12 +43,13 @@ interface Props {
     href: string;
   }[];
   featured?: boolean;
+  caseStudy?: { slug: string; role: string };
 }
 
 export function ProjectCard({
-  title, href, description, dates, tags, image, imageCaption, video, links, featured = false,
+  title, href, description, dates, tags, image, imageAlt = "", imageCaption, video, links, featured = false, caseStudy,
 }: Props) {
-  const Heading = featured ? "h3" : "h4";
+  const projectHref = caseStudy ? `/projects/${caseStudy.slug}` : href;
 
   return (
     <article className={cn(
@@ -56,7 +57,7 @@ export function ProjectCard({
       featured
         ? "flex h-full flex-col rounded-[1.35rem]"
         : "grid grid-cols-[5rem_minmax(0,1fr)] items-start gap-3 rounded-2xl p-3 sm:grid-cols-[7rem_minmax(0,1fr)] sm:gap-4 sm:p-4",
-      href && "hover:border-primary/60 focus-within:border-primary motion-safe:transition-colors"
+      projectHref && "hover:border-primary/60 focus-within:border-primary motion-safe:transition-colors"
     )}>
       <figure className={cn(
         "relative overflow-hidden bg-muted",
@@ -67,20 +68,22 @@ export function ProjectCard({
         ) : image ? (
           <ProjectImage
             src={image}
-            sizes={featured ? "(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 470px" : "(max-width: 639px) 80px, 112px"}
-            animated={Boolean(href)}
+            alt={featured ? imageAlt : ""}
+            sizes={featured ? "(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 512px" : "80px"}
+            animated={Boolean(projectHref)}
           />
         ) : null}
-        {image && imageCaption && !video && (
+        {featured && image && imageCaption && !video && (
           <figcaption className="absolute bottom-2 left-2 rounded-md bg-background/90 px-2.5 py-1 text-xs text-foreground">
             {imageCaption}
           </figcaption>
         )}
       </figure>
       <div className={cn("flex min-w-0 flex-col", featured ? "flex-1 gap-3 p-5 sm:p-6" : "gap-2")}>
-        <Heading className={featured ? "text-2xl leading-tight sm:text-3xl" : "text-lg leading-tight"}>
+        <h3 className={featured ? "text-2xl leading-tight sm:text-3xl" : "text-lg leading-tight"}>
           {title}
-        </Heading>
+        </h3>
+        {featured && caseStudy && <p className="text-sm font-medium text-primary">{caseStudy.role}</p>}
         {dates && <time className="text-xs text-muted-foreground">{dates}</time>}
         <div className="text-pretty text-sm leading-relaxed text-muted-foreground">
           <Markdown>{description}</Markdown>
@@ -92,16 +95,15 @@ export function ProjectCard({
             </Badge>
           ))}
         </div>
-        {href && (
+        {projectHref && (
           <Link
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`View project: ${title}`}
-            className="inline-flex min-h-11 w-fit items-center gap-2 rounded-md text-sm font-semibold text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+            href={projectHref}
+            target={caseStudy ? undefined : "_blank"}
+            rel={caseStudy ? undefined : "noopener noreferrer"}
+            aria-label={`${caseStudy ? "Read case study" : "View source"}: ${title}`}
+            className="inline-flex min-h-11 w-fit items-center rounded-md text-sm font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
           >
-            View project
-            <ArrowUpRight aria-hidden="true" className="size-4 motion-safe:transition-transform motion-safe:group-hover:translate-x-0.5 motion-safe:group-hover:-translate-y-0.5 motion-safe:group-focus-within:translate-x-0.5 motion-safe:group-focus-within:-translate-y-0.5" />
+            {caseStudy ? "Read case study" : "View source"}
           </Link>
         )}
         {links?.map(({ href, icon, type }) => (
